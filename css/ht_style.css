@@ -1,0 +1,874 @@
+@charset "UTF-8";
+
+/*
+*Tommi Tuominen 2014
+*Sivuston yleinen tyylitiedosto
+*/
+
+body{
+	font-family: "Trebuchet MS",Arial,sans-serif;
+	background-image: url("../img/crossword.png");
+	padding-top: 20px;
+    margin: 0px auto;
+}
+
+iframe{
+	border: 0px;
+}
+
+.minicontainer{
+	background-color: #f0f0f0;
+	font-size: 10pt;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;  		
+}
+
+#page-wrap { 
+	width: 600px; 
+	margin: 15px auto; 
+	position: relative; 
+}
+
+#sidebar { 
+	width: 190px;
+	background-color: white;
+	position: fixed; 
+	margin-left: 250px; 
+}
+
+video{
+	margin: 0;
+}
+
+#vaihtuva{
+	display: inline-block;	
+}
+
+#main_head i{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+	color: #FD737A;
+}
+
+i{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+	color: #FFCF74;
+}
+
+#main_head{
+	color: #5ECFC6;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);	
+}
+
+pre{
+	background-color: #fefefe;
+}
+
+.paluu{
+	float: right;
+}
+
+img{
+	margin: 25px 0px 15px 0px;
+}
+
+h1{
+	font-size: 20pt;
+	margin-top: 15px;
+	color: #5ECFC6;
+	text-shadow: 1px 1px 0px #000000;		
+}
+
+h2{
+	font-size: 18pt;
+	margin-top: 55px;
+	color: #00655E;
+	text-shadow: 1px 1px 1px #5ECFC6;
+}
+
+h3{
+	margin-top: 35px;
+	color: #00655E;
+	text-shadow: 1px 1px 1px #5ECFC6;
+}
+
+a:link {color: #00655E; font-size: 10pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+a:visited {color: #00655E; font-size: 10pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+a:hover {color:#FD737A; font-size: 10pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+a:active {color: #00655E; font-size: 10pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);} 
+
+@media only screen and (min-width: 1025px) {
+
+	#ylidiv{
+		width: 1130px;
+		margin: 0px auto;	
+	}
+
+	#uberdiv{
+		display: inline-block;
+		float: left;
+		width: 800px;
+		margin: 0px auto;		
+	}
+
+	#main_head{
+		font-size: 32pt;
+		font-family: 'Rochester', cursive;
+		margin-bottom: 5px;
+	}
+
+	.twitterbox{
+		margin-top: 190px;
+		display: inline-block;
+		float: right;
+	}
+
+	#main_head i{
+		font-size: 20pt;
+	}
+
+	#main_head b{
+		font-size: 42pt;
+	}
+
+	.mainwrap{
+		display: inline-block;		
+		width: 750px;
+		margin: 0px auto;
+		margin-bottom: 5px;		
+		padding: 20px;
+		background-color: white;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: thin solid silver;			
+	}
+
+	#validointi{
+		visibility: visible;
+		float: right;			
+	}
+
+	nav{
+		color: #A46C00;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-top: 1px solid #BE8D30;
+		border-bottom: 1px solid #BE8D30;		
+	}
+
+/*********Floatmenu***********/
+	#floatmenu_b{
+ 		display: inline-block;		
+	    float: right;	    
+	    width: 300px;
+	    top: 0;
+	    left: 0;
+	    z-index: 1;
+	    background-color: white;
+	    padding: 5px 15px 5px 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: thin solid silver;
+		box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+	}
+	#floatmenu{
+	    position: fixed;
+	    float: left;
+	    margin-left: 120px;
+	    margin-top: 200px;
+	    height: 400px;
+	    top: 0;
+	    left: 0;
+	    z-index: 1;
+	    background-color: white;
+	    padding: 5px 15px 5px 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: thin solid silver;
+		box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+	}
+	#piilobtn{
+		width: 29%;
+		height: 25px;
+		border: 0;
+		background-color: white;
+		background-repeat: no-repeat;
+		background-image: url("../img/silma.jpg");
+	}
+	#raahausteksti{
+		font-size: 10pt;
+		margin-left: 10px;
+		color: silver;
+	}
+	ul.nobullets{
+		list-style-type: none;
+		margin-left: -30px;
+		line-height: 150%;		
+	}
+	ul.nobullets a{
+		font-size: 10pt;		
+	}
+/******************************/
+
+	nav ul{
+		margin: 0px 0px 0px -30px;
+	}
+
+  	nav li{
+        display: inline-block;
+        margin: 5px 35px 5px 0px;
+    	list-style-type:none;    
+    }
+
+	nav a:link {
+		color: #A46C00;
+		font-size: 18pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+		-webkit-transition: 0.5s linear;
+		-moz-transition: 0.5s linear;
+		-o-transition: 0.5s linear;
+		-ms-transition: 0.5s linear;
+		transition: 0.5s linear;		
+	}
+	nav a:visited {color: #A46C00; font-size: 18pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+	nav a:hover {
+		color:#FFCF74;
+		font-size: 18pt;		
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);		
+	}
+	nav a:active {color: #A46C00; font-size: 18pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+
+	#content{
+		width: 100%;
+		background-color: white;
+	}
+
+	.textblock{
+		padding-left: 50px;
+	}
+
+	.esimbox{
+		width: 550px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding: 10px;
+		font-size: 10pt;
+		margin: 15px 0px 25px 0px;
+		background-color: #f0f0f0;
+		box-shadow: 5px 5px 5px #888888;
+	}
+
+
+/********FORMI**********/
+	.formdiv_right{
+  		display: inline-block;
+  		margin-right: 50px;
+  		margin-bottom: 10px;  				
+	}
+
+	.formdiv_left{
+		float: left;
+  		display: inline-block;
+  		margin-right: 50px;
+  		margin-bottom: 10px;		  				
+	}
+
+	.small_label{
+		color: #5ECFC6;
+		font-size: 12pt;
+		margin-bottom: 2px;
+		text-shadow: 1px 1px 0px rgba(0, 101, 94, 1);	
+	}
+
+	p.small_label{
+		color: #5ECFC6;
+		font-size: 18pt;
+		margin-bottom: 5px;
+		text-shadow: 1px 1px 0px rgba(0, 101, 94, 1);	
+	}
+
+	.inputbox{
+		height: 27px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+	}		
+
+	#viesti{
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+	}
+
+	.formbtn, .presetbtn, .resetbtn{
+
+		/* Gradient tehty osoitteessa: */
+		/* http://www.colorzilla.com/gradient-editor/ */			
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #dff5f3 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dff5f3)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#dff5f3 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dff5f3',GradientType=0 ); /* IE6-9 */
+		color: #00655E;	
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+		-webkit-transition: 0.5s ease;
+		-moz-transition: 0.5s ease;
+		-o-transition: 0.5s ease;
+		-ms-transition: 0.5s ease;
+		transition: 0.5s ease;
+		margin: 0;
+		padding: 0;
+		height: 30px;
+		width: 100px;
+		font-size: 12pt;			
+	}
+
+	.formbtn:hover, .presetbtn:hover, .resetbtn:hover, #piilobtn:hover{
+		color: #FFA700;
+		border-color: #FFA700;
+	}
+/***********************/
+
+	.huomio{
+		color:#FD737A;
+		font-size: 14pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	#footerdiv{
+		float: right;
+	}
+
+	footer{
+		width: 100%;
+		font-style: italic;
+		font-size: 10pt;
+		line-height: 150%;
+		color: #A46C00;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-top: 1px solid #BE8D30;
+		border-bottom: 1px solid #BE8D30;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+		padding: 5px 0px 5px 0px;
+	}
+}
+
+/*------- 1024px -------*/
+@media only screen and (max-width: 1024px) {
+
+	#uberdiv{
+		width: 600px;
+	}
+
+	body{
+		padding: 0px;
+		background-image: none;
+		background-color: white;
+	}
+
+	.twitterbox{
+		position: fixed;
+		visibility: hidden;
+	}
+
+	.mainwrap{
+		font-size: 10pt;
+		margin-bottom: 5px;		
+		padding: 0px;
+		background-color: white;
+	}
+
+	#main_head{
+		font-size: 22pt;
+		font-family: 'Rochester', cursive;
+	}
+
+	#main_head i{
+		font-size: 10pt;
+	}
+
+	#main_head b{
+		font-size: 32pt;
+	}
+
+	#validointi{
+		visibility: hidden;
+		float: right;
+	}
+
+/*********Floatmenu***********/
+	#floatmenu{
+		border: 0;
+	}
+	#piilobtn{
+		visibility: hidden;
+	}
+	#raahausteksti{
+		visibility: hidden;
+	}
+	ul.nobullets{
+		list-style-type: none;
+		margin-left: -30px;
+		line-height: 150%;		
+	}
+	ul.nobullets a{
+		font-size: 10pt;		
+	}	
+/*****************************/
+
+	nav{
+		color: #A46C00;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-top: 1px solid #BE8D30;
+		border-bottom: 1px solid #BE8D30;		
+	}
+
+	nav ul{
+		margin: 0px 0px 0px -30px;
+	}
+
+  	nav li{
+  		display: inline-block;	
+        margin: 5px 15px 5px 0px;
+    	list-style-type:none;    
+    }
+
+	nav a:link {
+		color: #A46C00;
+		font-size: 16pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+	nav a:visited {color: #A46C00; font-size: 16pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+	nav a:hover {
+		color:#FFCF74;
+		font-size: 16pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);		
+	}
+	nav a:active {color: #A46C00; font-size: 16pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+
+	#content {
+		background-color: white;
+		height: 100%;	
+		width: 100%;
+	}
+
+	.esimbox{
+		width: 100%;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding: 5px;
+		margin: 5px 0px 5px 0px;
+		background-color: #f0f0f0;
+		font-size: 12pt;
+		box-shadow: 2px 2px 2px #888888;
+	}
+
+	.prettyprint{
+		font-size: 12pt;
+	}
+
+	footer{
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		border: 1px solid #BE8D30;
+		width: 100%;
+		font-style: italic;
+		font-size: 8pt;
+		color: #A46C00;
+		background-color: #FFCF74;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+		padding: 2px;
+	}
+
+/********FORMI**********/
+	.formdiv_right{
+  		display: inline-block;
+  		margin-right: 50px;
+  		margin-bottom: 10px;  				
+	}
+
+	.formdiv_left{
+		float: left;
+  		display: inline-block;
+  		margin-right: 50px;
+  		margin-bottom: 10px;		  				
+	}
+
+	.small_label{
+		color: #5ECFC6;
+		font-size: 12pt;
+		text-shadow: 1px 1px 0px rgba(0, 101, 94, 1);	
+	}
+
+	p.small_label{
+		color: #5ECFC6;
+		font-size: 18pt;
+		margin-bottom: 5px;
+		text-shadow: 1px 1px 0px rgba(0, 101, 94, 1);	
+	}
+
+	.inputbox{
+		height: 25px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+	}
+	#viesti{
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+	}
+	.formbtn, .presetbtn, .resetbtn{
+
+		/* http://www.colorzilla.com/gradient-editor/ */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #dff5f3 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dff5f3)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#dff5f3 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dff5f3',GradientType=0 ); /* IE6-9 */
+
+		height: 25px;
+		width: 80px;
+		font-size: 10pt;
+		color: #00655E;	
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+		-webkit-transition: 1s ease;
+		-moz-transition: 1s ease;
+		-o-transition: 1s ease;
+		-ms-transition: 1s ease;
+		transition: 1s ease;			
+	}
+
+	.formbtn:hover, .presetbtn:hover, .resetbtn:hover{
+		color: #FFA700;
+		border-color: #FFA700;
+	}
+/******************/
+
+	.huomio{
+		color:#FD737A;
+		font-size: 10pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+}
+
+/*---- 640px -----*/
+
+@media only screen and (max-width: 640px) {
+	#uberdiv{
+		width: 400px;
+	}
+
+	body{
+		padding: 0px;
+		background-image: none;
+		background-color: white;
+	}
+
+	.mainwrap{
+		border-color: thin solid red;
+		font-size: 10pt;
+		//width: 450px;	
+		padding: 0px;
+		background-color: white;	
+	}
+
+	.twitterbox{
+		position: fixed;		
+		visibility: hidden;
+	}
+
+	#main_head{
+		font-size: 16pt;
+		font-family: 'Rochester', cursive;
+	}
+
+	#main_head i{
+		font-size: 12pt;
+	}
+
+	#main_head b{
+		font-size: 22pt;
+	}
+
+	#validointi{
+		visibility: hidden;
+		float: right;
+	}
+
+/*********Floatmenu***********/
+	#floatmenu{
+		border: 0;
+	}
+	#piilobtn{
+		visibility: hidden;
+	}
+	#raahausteksti{
+		visibility: hidden;
+	}
+	ul.nobullets{
+		list-style-type: none;
+		margin-left: -30px;
+		line-height: 150%;		
+	}
+	ul.nobullets a{
+		font-size: 10pt;		
+	}	
+/****************************/
+
+	nav{
+		color: #A46C00;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-top: 1px solid #BE8D30;
+		border-bottom: 1px solid #BE8D30;		
+	}
+
+	nav ul{
+		margin: 0px 0px 0px -30px;
+	}
+
+  	nav li{
+        margin: 5px 15px 5px 0px;
+    	list-style-type:none;
+    }
+
+	nav a:link {
+		color: #A46C00;
+		font-size: 16pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);		
+	}
+	nav a:visited {color: #A46C00; font-size: 16pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}
+	nav a:hover {
+		color:#FFCF74;
+		font-size: 16pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);		
+	}
+	nav a:active {color: #A46C00; font-size: 16pt; text-decoration:none;text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);}		
+
+	#content {	
+		height: 100%;	
+		width: 100%;
+	}
+
+	.prettyprint{
+		font-size: 7pt;
+	}
+
+	.esimbox{
+		width: 95%;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding: 2px;
+		margin: 5px 0px 5px 0px;
+		background-color: #f0f0f0;
+		font-size: 10pt;
+		box-shadow: 2px 2px 2px #888888;
+	}
+
+	footer{
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		border: 1px solid #BE8D30;
+		width: 100%;
+		font-style: italic;
+		font-size: 8pt;
+		color: #A46C00;
+		background-color: #FFCF74;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+		padding: 2px;
+	}
+
+
+/********FORMI**********/
+
+	.formdiv_right{
+  		margin-bottom: 10px;  				
+	}
+
+	.formdiv_left{
+  		margin-bottom: 10px;		  				
+	}
+
+	.small_label{
+		color: #5ECFC6;
+		font-size: 10pt;
+	}
+
+	#nimi{
+		height: 25px;
+		border: 1px solid #5ECFC6;
+	}
+	#viesti{
+		width: 170px;
+		height: 100px;
+		border: 1px solid #5ECFC6;
+	}
+
+	.formbtn, .presetbtn, .resetbtn{
+
+		/* http://www.colorzilla.com/gradient-editor/ */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #dff5f3 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dff5f3)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#dff5f3 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#dff5f3 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dff5f3',GradientType=0 ); /* IE6-9 */
+
+		height: 25px;
+		width: 80px;
+		font-size: 10pt;
+		color: #00655E;	
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #5ECFC6;
+		-webkit-transition: 1s ease;
+		-moz-transition: 1s ease;
+		-o-transition: 1s ease;
+		-ms-transition: 1s ease;
+		transition: 1s ease;			
+	}
+/******************/
+
+	.huomio{
+		color:#FD737A;
+		font-size: 10pt;
+		text-decoration:none;
+		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media print{
+	body{
+		background-color: white;
+	}
+
+	#content {
+		height: 100%;	
+		width: 100%;
+	}
+
+	h1{
+		font-size: 20pt;
+		margin-top: 15px;
+		color: #000000;		
+	}
+
+	h2{
+		font-size: 18pt;
+		margin-top: 55px;
+		color: #000000;
+	}
+
+	h3{
+		margin-top: 35px;
+		color: #000000;
+	}
+
+	.esimbox{
+		width: 500px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: thin solid black;
+		padding: 5px;
+		margin: 15px 0px 15px 0px;	
+	}
+
+/*********************/
+	#floatmenu{
+		border: 0;
+	}
+	#piilobtn{
+		visibility: hidden;
+	}
+	#raahausteksti{
+		visibility: hidden;
+	}
+	ul.nobullets{
+		list-style-type: none;
+		margin-left: -30px;
+		line-height: 150%;		
+	}
+	ul.nobullets a{
+		font-size: 10pt;		
+	}
+/*********************/
+
+	nav{
+		display: none;
+	}
+
+	footer{
+		display: none;
+	}
+
+	#main_head{
+		display: none;			
+	}
+
+	ul.nobullets{
+		list-style-type: none;
+	}
+
+	a:link {color:black; font-size: 10pt; text-decoration:italic;}
+	a:visited {color:black; font-size: 10pt; text-decoration:italic;}
+	a:hover {color:black; font-size: 10pt; text-decoration:italic;}
+	a:active {color:black; font-size: 10pt; text-decoration:italic;}
+
+	.formbtn, .presetbtn, .resetbtn{
+		background: #ffffff;
+		height: 25px;
+		width: 80px;
+		font-size: 10pt;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.twitterbox{
+		position: fixed;		
+		visibility: hidden;
+	}				
+}

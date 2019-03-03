@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset = "UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>TT-htyo 2014 - Testaus</title>
+
+<link rel="stylesheet" type="text/css" href="css/ht_style.css"/>
+<link rel="stylesheet" type="text/css" href="css/ht_transition.css"/>
+<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<!--
+<script src="js/google-code-prettify/run_prettify.js"></script>
+-->
+<script src="js/ht_demo.js"></script>
+
+</head>
+
+<body onload="defaults()">
+
+<div id="ylidiv">
+
+<!--Twitter-->
+<!--
+<script src="js/ht_twitter.js"></script>
+-->
+<div id="uberdiv">
+
+<div class="mainwrap">
+  <div id="main_head"><b>CSS3</b> - Muutokset <i>transition</i>
+  <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpeople.uta.fi%2F~tuominen.tommi.j%2Fpage2.html&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" target="_blank" id="validointi"><p style="font-size: 14pt;">Katso validointi</p></a>
+  </div>
+  <script src="js/ht_nav.js"></script>
+</div>
+
+<div class="mainwrap">
+  <div id="content" style="height: 100%;">
+  <p>Tällä sivulla voi testailla eri transition-ominaisuuksia.</p>
+  <p>Testiohjelma hyödyntää <a href="http://jquery.com/" target="_blank" >jQuery</a> JavaScript-kirjastoa </p>
+  <br/>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_0">width</label><br/>
+      <input type="text" class="inputfield" id="field_0" name="0" value="100" placeholder="100" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_0" name="0" min="0" max="600" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_1">height</label><br/>
+      <input type="text" class="inputfield" id="field_1" name="1" value="100" placeholder="50" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_1" name="1" min="0" max="600" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_3">box-shadow</label><br/>  
+      <input type="text" class="inputfield" id="field_3" name="3" value="0" placeholder="0" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_3" name="3" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_2">border-radius</label><br/>
+      <input type="text" class="inputfield" id="field_2" name="2" value="0" placeholder="0" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_2" name="2" min="0" max="600" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_9">border-top-width</label><br/>      
+      <input type="text" class="inputfield" id="field_9" name="9" value="1" placeholder="1" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_9" name="9" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_10">border-right-width</label><br/>       
+      <input type="text" class="inputfield" id="field_10" name="10" value="1" placeholder="1" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_10" name="10" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_11">border-bottom-width</label><br/>       
+      <input type="text" class="inputfield" id="field_11" name="11" value="1" placeholder="1" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_11" name="11" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_12">border-left-width</label><br/>       
+      <input type="text" class="inputfield" id="field_12" name="12" value="1" placeholder="1" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_12" name="12" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_4">font-size</label><br/>       
+      <input type="text" class="inputfield" id="field_4" name="4" value="12" placeholder="12" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_4" name="4" min="0" max="55" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_5">transform</label><br/>       
+      <input type="text" class="inputfield" id="field_5" name="5" value="0" placeholder="0" onchange="uudetArvot(this.id)"/>
+      <input type="range" class="slider" id="slider_5" name="5" min="0" max="360" onchange="uudetArvot(this.id)"/>
+    </div>
+
+    <br/>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_6">background-color</label><br/>    
+      <input type="text" class="inputfield" id="field_6" name="6" value="#5ECFC6" placeholder="#5ECFC6" onchange="uudetArvot(this.id)"/>
+      <input type="color" id="slider_6" name="6" value="#5ECFC6" class="colorvalue" onchange="uudetArvot(this.id)" />
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_8">border-color</label><br/>      
+      <input type="text" class="inputfield" id="field_8" name="8" value="#34CFC3" placeholder="#34CFC3" onchange="uudetArvot(this.id)"/>
+      <input type="color" id="slider_8" name="8" value="#34CFC3" class="colorvalue" onchange="uudetArvot(this.id)" />
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="field_7">color</label><br/>        
+      <input type="text" class="inputfield" id="field_7" name="7" value="#ffffff" placeholder="#ffffff" onchange="uudetArvot(this.id)"/>
+      <input type="color" id="slider_7" name="7" value="#ffffff" class="colorvalue" onchange="uudetArvot(this.id)" />
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="kesto">kesto</label><br/>
+      <input type="text" id="kesto" placeholder="kesto" class="inputfield" />
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="tyyli">ajoituksen tyyli</label><br/>    
+      <select id="tyyli">
+        <option value="ease">ease</option>
+        <option value="linear">linear</option>
+        <option value="ease-in">ease-in</option>
+        <option value="ease-out">ease-out</option>
+        <option value="ease-in-out">ease-in-out</option>
+      </select>
+    </div>
+
+    <div class="btncontainer">
+      <label class="demo_label" for="viive">viive</label><br/>
+      <input type="text" id="viive" placeholder="viive" class="inputfield"/>
+    </div>
+    <div class="btncontainer">
+      <input type="button" id="asetabtn" class="formbtn" value="Aseta" onClick="asetaArvot()"/>
+    </div>
+    <div class="btncontainer">
+      <input type="button" id="resetbtn" class="formbtn" value="Resetoi" onClick="resetDefaults()"/>
+    </div>
+  <hr><br/>
+    <div id="demobox_trans" class="">Demobox</div>
+  <hr><br/>
+
+<div class="esimbox" id="democode">
+
+<pre class="prettyprint" id="csscode">
+
+#demobox_trans{
+  width:100px;
+  height: 50px;
+  color: white;
+  background-color: #5ECFC6;
+  font-size: 12pt;
+  text-align: right;
+  margin-bottom: 25px;
+  border: 1px solid #34CFC3;
+
+  /* Transitionit */
+  transition-delay: 0s;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out; 
+}
+
+.animate{
+
+}
+</pre>
+</div>
+
+  </div> 
+</div>
+
+<div class="mainwrap">
+  <script src="js/ht_footer.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>

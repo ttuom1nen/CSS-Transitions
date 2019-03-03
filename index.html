@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset = "UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>TT-htyo 2014 - Index</title>
+
+<!--CSS tyylit-->
+<link rel="stylesheet" type="text/css" href="css/ht_style.css"/>
+<link rel="stylesheet" type="text/css" href="css/ht_transition.css"/> 
+<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+
+<!--JavaScriptit-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<!--
+<script src="js/google-code-prettify/run_prettify.js"></script>
+-->
+</head>
+<body>
+
+<div id="ylidiv">
+
+<!--Twitter-->
+<!--
+<script src="js/ht_twitter.js"></script>
+-->
+
+<div id="uberdiv">
+
+<div class="mainwrap">
+	<div id="main_head"><b>CSS3</b> - Muutokset <i>transition</i>
+	<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpeople.uta.fi%2F~tuominen.tommi.j%2Findex.html&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0" target="_blank" id="validointi"><p style="font-size: 14pt;">Katso validointi</p></a>
+	</div>
+
+	<script src="js/ht_nav.js"></script>
+</div>
+
+<div class="mainwrap">
+<div id="content">
+
+<!--Leijuva navigaatio-->
+<div id="floatmenu" class="ui-widget-content">
+<input type="button" id="piilobtn" onClick="piilota()" value="&#160;"/>
+<span id="raahausteksti">Raahaa tästä</span>
+    <ul class="nobullets" id="floatmenu_ul">
+      <li><a href="#1.0"><b>1. CSS3-Muutokset</b></a>
+	    <ul class="nobullets">
+	      <li><a href="#1.1">1.1 Tutoriaalivideo osa 1</a></li>
+	    </ul>
+      </li>
+
+      <li><a href="#2.0"><b>2. Kuinka muutokset toimivat</b></a>
+	    <ul class="nobullets">
+	      <li><a href="#2.1">2.1 transition-property</a></li>
+	      <li><a href="#2.2">2.2 transition-duration</a></li>
+	      <li><a href="#2.3">2.3 transition-timing-function</a></li>
+	      <li><a href="#2.4">2.4 transition-delay</a></li>
+	      <li><a href="#2.4">2.5 transition</a></li>
+	    </ul>
+      </li>
+
+      <li><a href="#3.0"><b>3. Esimerkit</b></a>
+	    <ul class="nobullets">
+	      <li><a href="#3.1">3.1 Tutoriaalivideo osa 2</a></li>	    	
+	      <li><a href="#3.2">3.2 Esimerkki 1</a></li>
+	      <li><a href="#3.3">3.3 Esimerkki 2</a></li>
+	      <li><a href="#3.4">3.4 Esimerkki 3</a></li>	           	            	        
+	    </ul>
+      </li>     
+    </ul>
+</div>
+
+<!--Kappale 1-->
+
+<section id="1.0">
+	<h1>1. CSS3-Muutokset</h1>
+	<div class="textblock">
+		<p>
+		CSS3-Muutokset ovat mainio tehoste interaktiivisille ja muuten animaatiota vaativille elementeille. Muutoksilla voidaan muuttaa halutun elementin CSS-arvoja jouhevasti määrätyn aikamääreen mukaisesti. Hallittavia CSS-arvoja ovat esimerkiksi: elementin taustaväri <i>background-color</i>, leveys <i>width</i>, korkeus <i>height</i>, läpinäkyvyys <i>opacity</i>, ym...
+		</p>
+		<p>
+		Muutoskomentojen selainyhteensopivuus on melko laaja, mutta ne vaativat monesti selainkohtaisia etuliitteitä toimiakseen. Alla olevat selaimet tukevat css3 transitioneita.
+		</p>
+		<img src="img/selaimet.jpg" alt="yhtsopivuus" />
+		<p>
+		Alla esimerkki transition-komennolla toteutetusta simppelistä muutosanimaatiosta.
+		Kyseessä on normaali div-elementti, jonka taustaväriä muutetaan kun kursori viedään sen päälle. Muutoksen kestoksi on määritelty kaksi sekuntia.
+		</p>
+		<div class="example" id="transition_1a">Tässä esimerkissä vaihdetaan elementin taustaväriä</div>
+		<p>
+		Seuraavassa esimerkissä hallitaan elementin läpinäkyvyyttä:
+		</p>
+		<div class="example" id="transition_1b">Tässä esimerkissä vaihdetaan elementin läpinäkyvyyttä</div>
+		<p>
+		Molemmat muutostehosteen suoritetaan kun hiiri viedään elementin päälle. Muutos suoritetaan automaattisesti 'takaperin' takaisin lähtöarvoihin kun kursori poistuu elementin päältä.
+		</p>
+		<p>
+		Aivan kaikkia ominaisuuksia ei kuitenkaan pysty animoimaan muutosefekteillä. Lista animoitavista ominaisuuksista löytyy täältä:<br/>
+		<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties</a>
+		</p>
+	</div>
+
+<br/>
+
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+
+</section>
+
+<section id="1.1">
+	<h3>1.1 Tutoriaalivideo osa 1</h3>
+	<div class="textblock">
+	<!--Youtube video toimii tietenkin vain palvelimella-->
+	<iframe width="560" height="315" src="//www.youtube.com/embed/FkrzZ6qNYWo" allowfullscreen></iframe>
+	</div>
+	<br/>
+	<a href="#main_head" class="paluu">palaa alkuun</a>		
+</section>
+
+<!--Kappale 2-->
+
+<section id="2.0">
+	<h2>2. Kuinka muutokset toimivat</h2>
+	<div class="textblock">
+		<p>
+		Aluksi tarvitaan html-elementti jolla on määritettynä id tai class css-tyyli. Elementin tyyleissä määritellään muutosefektin komennot.
+		Muutosefektimoduuli koostuu komennoista joita käytetään määrittämään
+		muutettava ominaisuus, muutoksen kesto, muutosanimaation ajoituksen tyyli ja muutoksen alkamisen viive.
+		</p>
+		<ul>
+			<li><b><i>transition-property</i></b></li>
+			<li><b><i>transition-duration</i></b></li>
+			<li><b><i>transition-timing-function</i></b></li>
+			<li><b><i>transition-delay</i></b></li>
+		</ul>
+
+		<p>
+		Seuraavaksi tarvitaan kohdetyyli jossa määritellään muutettavan elementin uudet arvot. Tämän sivun esimerkeissä kohdetyylit aktivoituvat elementin :hover pseudoluokkavalitsimella.
+		</p>
+		<p>
+		Moduulissa on myös erikseen <i>transition</i> komento, jolla voidaan yhdistää yllä luetellut komennot. Seuraavaksi Tutustutaan komentoihin tarkemmin.
+		</p>
+		
+	</div>
+
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+<!---->
+
+<section id="2.1">
+	<h3>2.1 transition-property</h3>
+	<div class="textblock">
+		<p>
+			Muutostehostetta luodessa ensimmäinen vaihe on valita elementin muutettava ominaisuus. Valinta tapahtuu <i>transition-property</i> komennolla. Komento hyväksyy kaksi avainsanaa tai pilkuilla erotetun listan ominaisuuksia.
+		</p>
+
+<!--esimbox-->
+<div class="esimbox">
+<b>Esim:</b>	
+<br />
+<pre class="prettyprint">
+transition-property: all;
+transition-property: none;
+transition-property: background-color;
+transition-property: background-color, height, width;
+</pre>
+</div>
+		<p>	
+			Avainsanalla <i>all</i> voidaan suorittaa siirtymä kaikkiin muutosta tukeviin ominaisuuksiin.
+			Avainsanalla <i>none</i> siirtymä ei koske mitään ominaisuutta.
+			Muutoksen voi kohdistaa moneen eri ominaisuuteen erottelemalla halutut ominaisuudet pilkuilla.
+		</p>
+	</div>
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>		
+</section>
+
+<!---->
+
+<section id="2.2">
+	<h3>2.2 transition-duration</h3>
+	<div class="textblock">
+		<p>
+			Komennolla voidaan asettaa muutoksen kesto. Kesto ilmoitetaan sekunteina tai millisekunteina. Kommennon oletusarvo on 0 joka tarkoittaa että muutos on välitön. transition-duration komento on komennoista ainoa, joka on muutoksen kannalta välttämätön.
+		</p>
+
+<!--esimbox-->
+<div class="esimbox">			
+<b>Esim:</b>
+<br />
+<pre class="prettyprint">
+transition-duration: 2s;
+transition-duration: 4000ms;
+transition-duration: 4000ms, 8000ms;
+</pre>
+</div>
+
+	</div>
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>		
+</section>
+
+<!---->
+
+<section id="2.3">
+	<h3>2.3 transition-timing-function</h3>
+	<div class="textblock">
+		<p>
+		Komennolla voidaan hallita muutoksen ajoitusta. Komentoa käytetään joko asettamalla jokin valmiiksitoteutetuista avainsanoista <i>ease</i>, <i>linear</i>, <i>ease-in</i>, <i>ease-out</i>, <i>ease-in-out</i>, tai määrittämällä oma ajoitus neljällä kiintopisteellä.
+		</p>
+		Kiintopisteet voi määrittää manuaalisesti cubic-bezier()-komennolla. Määritys tapahtuu asettamalla neljä pistettä, joista muodostuu bezier-käyrä.<br/>
+		<img src="img/bezier.jpg" alt="bezier" />
+
+		<p>
+		Valmiiksi määritettyjen ajoitusten bazier arvot:
+		</p>
+
+		<ul>
+			<li><i>ease</i> = cubic-bezier(0.25, 0.1, 0.25, 1)</li>
+			<li><i>linear</i> = cubic-bezier(0, 0, 1, 1)</li>
+			<li><i>ease-in</i> = cubic-bezier(0.42, 0, 1, 1)</li>
+			<li><i>ease-out</i> = cubic-bezier(0, 0, 0.58, 1)</li>
+			<li><i>ease-in-out</i> = cubic-bezier(0.42, 0, 0.58, 1)</li>
+		</ul>	
+		<br/>		
+
+<!--esimbox-->
+<div class="esimbox">
+<b>Esim:</b>
+<br />
+<pre class="prettyprint">
+transition-timing-function: ease;
+transition-timing-function: ease, linear;
+transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.8);
+</pre>
+</div>
+
+	<br/>
+	Alla esimerkkejä ajoituksista. Bezier-palkin arvot ovat: <i>cubic-bezier(0.6, 0.1, 0.15, 0.8);</i><br /><br />
+	<div class="transition_2a transition_2a_ease">ease</div>
+	<div class="transition_2a transition_2a_linear">linear</div>
+	<div class="transition_2a transition_2a_easein">ease-in</div>
+	<div class="transition_2a transition_2a_easeout">ease-out</div>
+	<div class="transition_2a transition_2a_easeinout">ease-in-out</div>
+	<div class="transition_2a transition_2a_bezier">cubic-bezier</div>
+
+	</div>
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+<!---->
+
+<section id="2.4">
+	<h3>2.4 transition-delay</h3>
+	<div class="textblock">
+		<p>
+			Komennolla voidaan määrätä muutoksen alkamisen viive. Oletusarvo on 0, jolloin muutos alkaa välittömästi sen laukaistua. Viiveeksi voidaan syöttää myös negatiivinen luku. Negatiivinen viive otetaan huomioon siten, että animaatio alkaa siitä kohdasta jossa se olisi ilman viivettä.
+		</p>
+
+<!--esimbox-->
+<div class="esimbox">
+<b>Esim:</b>	
+<br />
+<pre class="prettyprint">
+transition-delay: 5s;
+transition-delay: 4000ms, 8000ms;
+transition-delay: -5s;
+</pre>
+</div>
+	<br/>
+	<div id="del1" class="transition_3a">delay 1s</div>
+	<div id="del2" class="transition_3a">delay 2s</div>
+	<div id="del3" class="transition_3a">delay -1s</div>
+
+	</div>
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+<!---->
+
+<section id="2.5">
+	<h3>2.5 transition</h3>
+	<div class="textblock">
+		<p>Komennolla voidaan yhdistää kaikki muut yllä esitellyt komennot.</p>
+		<p><b>Syntaksi:</b></p>			
+		<p>transition: ominaisuus kesto ajoitus viive;</p>
+
+<!--esimbox-->
+<div class="esimbox">
+<b>Esim:</b>
+<br />
+<pre class="prettyprint">
+transition: background-color 3s linear 1s;
+transition: 4s ease-in-out;
+transition: 5s;
+</pre>
+</div>
+
+	</div>
+
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+
+<!--Kappale 3-->
+
+<section id="3.0">
+	<h2>3 Esimerkit</h2>
+	<br/>
+	<a href="#main_head" class="paluu">palaa alkuun</a>
+</section>
+
+<section id="3.1">
+	<h3>3.1 Tutoriaalivideo osa 2</h3>
+	<div class="textblock">
+		<!--Youtube video toimii tietenkin vain palvelimella-->	
+		<iframe width="560" height="315" src="//www.youtube.com/embed/A2tEm32PPEY" allowfullscreen></iframe>
+	</div>
+
+	<div class="textblock">
+
+
+<div class="esimbox">
+<b>Videossa käsitelty esimerkki:</b>	
+<br />
+<pre class="prettyprint">
+.boxi{
+	background-color: green;
+	border: 1px solid black;
+	width: 200px;
+	height: 100px;
+	color: white;
+	transition-property: width, height, background-color;
+	transition-duration: 1s, 2s, 5s;
+	transition-timing-function: linear, ease, ease-out;
+	transition-delay: 0s, 0s, 2s;
+}
+
+.boxi:hover{
+	background-color: red;
+	width: 500px;
+	height: 120px;
+}
+</pre>
+</div>
+
+</div><br/>
+		<a href="#main_head" class="paluu">palaa alkuun</a>
+</section>
+
+<section id="3.2">
+	<h3>3.2 Esimerkki 1</h3>
+	<div class="textblock">
+	<div class="example" id="transition_1aa">Tässä esimerkissä vaihdetaan elementin taustaväriä</div>
+	<div class="example" id="transition_1bb">Tässä esimerkissä vaihdetaan elementin läpinäkyvyyttä</div>
+
+<!--esimbox-->
+<div class="esimbox">
+<pre class="prettyprint">
+/* Esimerkki 1 A */
+
+#transition_1a{
+	width: 70%;
+	padding: 9px 15px;
+	background-color: #5ECFC6;
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/* Transition-komennot eri selaimille */
+
+	-webkit-transition: background-color 2s;
+	-moz-transition: background-color 2s;
+	-o-transition: background-color 2s;
+	-ms-transition: background-color 2s;
+	transition: background-color 2s;
+}
+
+#transition_1a:hover {
+	background-color: #FD737A;
+}
+</pre>
+</div>
+
+<!--esimbox-->
+<div class="esimbox">
+<pre class="prettyprint">
+/* Esimerkki 1 B */
+
+#transition_1b{
+	width: 70%;
+	padding: 9px 15px;
+	background-color: rgba(94,207,198,1);
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/* Transition-komennot eri selaimille */
+
+	-webkit-transition: background-color 2s;
+	-moz-transition: background-color 2s;
+	-o-transition: background-color 2s;
+	-ms-transition: background-color 2s;
+	transition: background-color 2s;
+}
+
+#transition_1b:hover {
+	background-color: rgba(94,207,198,0.1);
+}
+</pre>
+</div>	
+
+	</div>
+
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+<section id="3.3">
+	<h3>3.3 Esimerkki 2</h3>
+	<div class="textblock">
+	<div id="ease" class="transition_2a transition_2a_ease">ease</div>
+	<div id="linear" class="transition_2a transition_2a_linear">linear</div>
+	<div id="easein" class="transition_2a transition_2a_easein">ease-in</div>
+	<div id="easeout" class="transition_2a transition_2a_easeout">ease-out</div>
+	<div id="easeinout" class="transition_2a transition_2a_easeinout">ease-in-out</div>
+	<div id="bezier" class="transition_2a transition_2a_bezier">cubic-bezier</div>
+
+	<!--esimbox-->
+	<div class="esimbox">
+	<pre class="prettyprint">
+	.transition_2a{
+		width: 100px;
+		height: 25px;
+		margin: 5px 0;
+		padding: 5px;
+		color: white;
+		background-color: #5ECFC6;
+		text-align: right;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.transition_2a:hover{
+		width: 500px;
+	}
+
+	.transition_2a_ease{
+		-webkit-transition: 3s ease;
+		-moz-transition: 3s ease;
+		-o-transition: 3s ease;
+		-ms-transition: 3s ease;
+		transition: 3s ease;
+	}
+
+	.transition_2a_linear{
+		-webkit-transition: 3s linear;
+		-moz-transition: 3s linear;
+		-o-transition: 3s linear;
+		-ms-transition: 3s linear;
+		transition: 3s linear;
+	}
+
+	.transition_2a_easein{
+		-webkit-transition: 3s ease-in;
+		-moz-transition: 3s ease-in;
+		-o-transition: 3s ease-in;
+		-ms-transition: 3s ease-in;
+		transition: 3s ease-in;
+	}
+
+	.transition_2a_easeout{
+		-webkit-transition: 3s ease-out;
+		-moz-transition: 3s ease-out;
+		-o-transition: 3s ease-out;
+		-ms-transition: 3s ease-out;
+		transition: 3s ease-out;
+	}
+
+	.transition_2a_easeinout{
+		-webkit-transition: 3s ease-in-out;
+		-moz-transition: 3s ease-in-out;
+		-o-transition: 3s ease-in-out;
+		-ms-transition: 3s ease-in-out;
+		transition: 3s ease-in-out;
+	}
+
+	.transition_2a_bezier{
+		-webkit-transition: 3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+		-moz-transition: 3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+		-o-transition: 3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+		-ms-transition: 3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+		transition: 3s cubic-bezier(0.6, 0.1, 0.15, 0.8);
+	}
+	</pre>
+	</div>
+
+</div>
+
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+
+
+<section id="3.4">
+	<h3>3.4 Esimerkki 3</h3>
+	<div class="textblock">
+	<div id="del1b" class="transition_3aa">delay 1s</div>
+	<div id="del2b" class="transition_3aa">delay 2s</div>
+	<div id="del3b" class="transition_3aa">delay -1s</div>
+	
+<!--esimbox-->
+<div class="esimbox">
+<pre class="prettyprint">
+.transition_3a{
+	width: 100px;
+	margin: 5px 0;
+	padding: 5px;
+	color: white;
+	background-color: #5ECFC6;
+	text-align: right;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.transition_3a:hover{
+	width: 500px;
+}
+
+.transition_3a#del1{
+	-webkit-transition: 3s ease 1s;
+	-moz-transition: 3s ease 1s;
+	-o-transition: 3s ease 1s;
+	-ms-transition: 3s ease 1s;
+	transition: 3s ease 1s;
+}
+
+.transition_3a#del2{
+	-webkit-transition: 3s ease 2s;
+	-moz-transition: 3s ease 2s;
+	-o-transition: 3s ease 2s;
+	-ms-transition: 3s ease 2s;
+	transition: 3s ease 2s;
+}
+
+.transition_3a#del3{
+	-webkit-transition: 3s ease -1s;
+	-moz-transition: 3s ease -1s;
+	-o-transition: 3s ease -1s;
+	-ms-transition: 3s ease -1s;
+	transition: 3s ease -1s;
+}
+</pre>
+</div>
+
+	</div>
+
+<br/>
+<a href="#main_head" class="paluu">palaa alkuun</a>	
+</section>
+
+<!---->
+
+	<br/>
+<hr>
+
+</div>
+</div>
+
+<div class="mainwrap">
+	<script src="js/ht_footer.js"></script>
+</div>
+
+</div>
+</div>
+</body>
+</html>
